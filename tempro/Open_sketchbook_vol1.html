@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link id="stylesheet"  rel="stylesheet"    href="style1.css">
+ 
+</head>
+
+<body>
+
+<div class="container">
+ 
+ <! - menù ->
+  <header class="header">
+    <a href="index.html"><ul class="fede"> Federico Bolletta </ul></a>
+      <nav>
+        <ul class="menu">
+            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="About me.html"> About </a></li>
+            <li> <a href="Works.html"> Works </a></li>
+            <li> <a href="Contacts.html"> Contacts </a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+      </div>
+
+ </header>
+
+ <button class="button" onclick="changeStylesheet()"></button>
+
+ <!-titolo->
+
+ <h1 class="titolo-pagineinterne">Open Sketchbook volume 1</h1>
+
+ <!-contenuto->
+
+  <div class="grid-pagineinterne">
+    <div class="col-30">
+        <img src="immagini/op1.png" alt="immagine 1" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op2.png" alt="immagine 2" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op3.png" alt="immagine 3" class="img-res-pagineinterne">
+    </div>
+  </div>
+
+  <div class="grid-pagineinterne">
+    <div class="col-30">
+        <img src="immagini/op4.png" alt="immagine 4" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op5.png" alt="immagine 5" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op6.png" alt="immagine 6" class="img-res-pagineinterne">
+    </div>
+  </div>
+
+  <div class="grid-pagineinterne">
+    <div class="col-30">
+        <img src="immagini/op7.png" alt="immagine 7" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op8.png" alt="immagine 8" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op9.png" alt="immagine 9" class="img-res-pagineinterne">
+    </div>
+  </div>
+
+  <div class="grid-pagineinterne">
+    <div class="col-30">
+        <img src="immagini/op10.png" alt="immagine 10" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op11.png" alt="immagine 11" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op12.png" alt="immagine 12" class="img-res-pagineinterne">
+    </div>
+  </div>
+
+  <div class="grid-pagineinterne-last">
+    <div class="col-30">
+        <img src="immagini/op13.png" alt="immagine 13" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op14.png" alt="immagine 14" class="img-res-pagineinterne">
+    </div>
+    <div class="col-30">
+        <img src="immagini/op15.png" alt="immagine 15" class="img-res-pagineinterne">
+    </div>
+  </div>
+
+
+
+ 
+ <! -footer-> 
+ 
+ <footer class="footer">
+  <div class="grid">
+   
+    <div class="col-30">
+      <h4>Federico Bolletta</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="col-30">
+      <h4>menù</h4>
+      <ul>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+      </ul>
+    </div>
+    <div class="col-30">
+      <h4>section</h4>
+      <ul>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+      </ul>
+    </div>
+  
+  </div>
+</footer>
+       
+
+
+
+
+  <script> 
+  /* js code */ 
+  console.log("crash")
+  /* questa è una variabile*/
+  let hamburger = document.querySelector('.hamburger');
+
+  hamburger.addEventListener("click", function() {
+    document.body.classList.toggle('open');
+  }); 
+  </script>
+
+<script>
+  function changeStylesheet() {
+      var styleSheet = document.getElementById("stylesheet");
+
+      if (styleSheet.getAttribute("href") === "style1.css") {
+          styleSheet.setAttribute("href", "style2.css");
+      } else {
+          styleSheet.setAttribute("href", "style1.css");
+      }
+  }
+</script>
+
+</div>
+</body>
+</html>
